@@ -1,42 +1,81 @@
+/* Style global du corps de la page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    background-color: #f4f7fb; /* Un fond clair pour la page */
 }
 
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #a2c7f7;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-h1 {
-    color: #4A90E2;
-    text-decoration: underline;
-}
-
-button {
-    background-color: #4A90E2;
+/* La bande en haut de l'écran */
+header {
+    background-color: #87CEEB; /* Bleu pastel */
     color: white;
-    border: none;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère sous la bande */
+    border-bottom: 3px solid #4682B4; /* Trait bleu en bas de la bande */
+}
+
+/* Le contenu principal (champs et formulaire) */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30vh; /* Placer le contenu à un tiers de l'écran */
+}
+
+/* Titre de la page */
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #4682B4; /* Bleu pour les titres */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton */
+button {
+    background-color: #4682B4;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
 }
 
+/* Le bouton quand il est désactivé */
 button:disabled {
-    background-color: #ccc;
+    background-color: #ddd;
     cursor: not-allowed;
 }
 
-input {
-    margin: 5px;
-    padding: 5px;
+/* Style de la bande jaune sur les côtés */
+.side-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background-color: yellow;
+    z-index: 10;
+}
+
+.side-banner.right {
+    left: unset;
+    right: 0;
 }
