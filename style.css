@@ -4,39 +4,44 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f7fb; /* Un fond clair pour la page */
+    background-color: #f4f7fb;
 }
 
-/* La bande en haut de l'écran */
+/* Bande en haut de l'écran */
 header {
-    background-color: #87CEEB; /* Bleu pastel */
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center;
+    background-color: #87CEEB; 
     color: white;
-    text-align: center;
     padding: 20px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère sous la bande */
-    border-bottom: 3px solid #4682B4; /* Trait bleu en bas de la bande */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #4682B4;
 }
 
-/* Le contenu principal (champs et formulaire) */
+/* Logo dans la bande */
+header .logo {
+    max-height: 50px; /* Ajuste la taille du logo */
+    margin-right: 20px; /* Espacement entre le logo et le titre */
+}
+
+/* Titre */
+header h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #4682B4;
+}
+
+/* Conteneur central */
 .container {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 30vh; /* Placer le contenu à un tiers de l'écran */
+    padding-top: 30vh;
 }
 
-/* Titre de la page */
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    color: #4682B4; /* Bleu pour les titres */
-}
-
-/* Style des champs de saisie */
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="radio"] {
+/* Champs de saisie */
+input[type="text"], input[type="tel"], input[type="email"], input[type="radio"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -45,7 +50,7 @@ input[type="radio"] {
     box-sizing: border-box;
 }
 
-/* Style du bouton */
+/* Bouton */
 button {
     background-color: #4682B4;
     color: white;
@@ -58,13 +63,13 @@ button {
     margin-top: 20px;
 }
 
-/* Le bouton quand il est désactivé */
+/* Bouton désactivé */
 button:disabled {
     background-color: #ddd;
     cursor: not-allowed;
 }
 
-/* Style de la bande jaune sur les côtés */
+/* Bannière jaune sur les côtés */
 .side-banner {
     position: fixed;
     top: 0;
