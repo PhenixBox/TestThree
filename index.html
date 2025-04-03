@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location de Box - Index</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de Location de Box</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Informations Personnelles</h1>
 
-        <!-- Formulaire de saisie des informations personnelles -->
-        <form id="personalForm">
+    <!-- Bande en haut avec logo -->
+    <header>
+        <img src="https://www.phenix-recyclage.com/img/global/phenix-recyclage.png" alt="Phenix Recyclage Logo" class="logo">
+        <h1>Formulaire de Location de Box</h1>
+    </header>
+
+    <!-- Bannière jaune sur les côtés -->
+    <div class="side-banner"></div>
+    <div class="side-banner right"></div>
+
+    <!-- Formulaire -->
+    <div class="container">
+        <h2>Informations Personnelles</h2>
+        <form id="personalForm" action="page2.html" method="POST">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required><br>
 
@@ -38,6 +48,6 @@
         </form>
     </div>
 
-    <script src="index.js"></script>
+    <script src="js/page1.js"></script>
 </body>
 </html>
