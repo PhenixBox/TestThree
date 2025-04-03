@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Box - Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Informations Personnelles</h1>
+
+        <!-- Formulaire de saisie des informations personnelles -->
+        <form id="personalForm">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <h2>Choisissez votre solution de stockage :</h2>
+            <label for="15m2">
+                <input type="radio" id="15m2" name="storageChoice" value="15m² à 90€" required>
+                15m² - 90€/mois
+            </label><br>
+            <label for="30m2">
+                <input type="radio" id="30m2" name="storageChoice" value="30m² à 120€" required>
+                30m² - 120€/mois
+            </label><br>
+
+            <button type="submit">Suivant</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
